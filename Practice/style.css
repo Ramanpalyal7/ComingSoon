@@ -43,7 +43,27 @@
   background: transparent;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  border-radius: 6px;
 }
 
 .triangle {
+  height: 18px;
+  margin-left: 4px;
+  /* border: 2px solid red; */
+}
+
+.rocket {
+  left: 50%;
+}
+
+.launch-date {
+  border: 2px solid #fff;
+  display: flex;
+
+  color: #fff;
+}
+
+.launch-date p {
+  font-size: 4em;
 }
