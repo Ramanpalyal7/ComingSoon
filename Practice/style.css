@@ -6,13 +6,16 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycGxlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+  background-image: url(/ComingSoonProject/images/background.png);
+  background-position: center;
+  background-size: cover;
   padding: 1% 8%;
 }
 
 .container .logo {
   width: 120px;
   margin: 4px 12px;
+  cursor: pointer;
 }
 
 .content {
@@ -27,7 +30,7 @@
   color: #fff;
   font-size: 4em;
   font-weight: 600;
-  margin: 12px 0;
+  margin-top: 12px 0;
 }
 
 .content h1 span {
@@ -45,6 +48,7 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .triangle {
@@ -52,18 +56,40 @@
   margin-left: 4px;
   /* border: 2px solid red; */
 }
-
+/* ----------------------------Animation ---------of---------Rocket */
 .rocket {
-  left: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  animation: rocket linear 6s infinite;
+  width: 16em;
 }
 
+@keyframes rocket {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-230%);
+  }
+}
 .launch-date {
-  border: 2px solid #fff;
   display: flex;
-
+  /* border: 2px solid  #fff; */
   color: #fff;
+
+  margin-top: -4em;
+  margin-bottom: 2em;
 }
 
+.launch-date div {
+  flex-basis: 100px;
+}
 .launch-date p {
   font-size: 4em;
 }
